@@ -3,62 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#ede4d8" />
-  <meta name="description" content="Convite de casamento - 12 de dezembro de 2027, às 19h." />
-  <title>Convite de Casamento</title>
+  <meta name="theme-color" content="#17120d" />
+  <meta name="description" content="Convite de casamento — 12 de dezembro de 2027, às 19h." />
+  <title>Nosso Conto de Amor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="experience" aria-label="Convite de casamento interativo">
+  <main class="experience" aria-label="Convite de casamento em formato de livro">
     <section class="intro" id="intro">
-      <div class="intro-glow"></div>
-      <div class="botanical botanical-left"></div>
-      <div class="botanical botanical-right"></div>
+      <div class="forest-light" aria-hidden="true"></div>
+      <div class="floating-particles" aria-hidden="true"></div>
 
-      <button class="envelope-wrap" id="openInvite" type="button" aria-label="Abrir convite">
-        <div class="envelope-shadow"></div>
-        <div class="envelope">
-          <div class="envelope-back"></div>
-          <div class="letter-preview">
-            <span class="mini-ornament">❦</span>
-            <strong>Nosso casamento</strong>
+      <button class="story-book" id="openInvite" type="button" aria-label="Abrir o livro do convite">
+        <span class="book-shadow" aria-hidden="true"></span>
+        <span class="book-block">
+          <span class="book-pages" aria-hidden="true"></span>
+          <span class="book-cover">
+            <span class="cover-frame"></span>
+            <span class="cover-ornament top">❦</span>
+            <span class="cover-kicker">Era uma vez...</span>
+            <strong>Nosso<br>conto de amor</strong>
+            <span class="cover-heart">♥</span>
             <small>12 • 12 • 2027</small>
-          </div>
-          <div class="envelope-front-left"></div>
-          <div class="envelope-front-right"></div>
-          <div class="envelope-bottom"></div>
-          <div class="envelope-flap"></div>
-          <div class="seal">A</div>
-        </div>
-        <span class="open-label">Toque para abrir</span>
+            <span class="cover-ornament bottom">❦</span>
+          </span>
+          <span class="inside-page" aria-hidden="true">
+            <span>Uma nova história<br>está prestes a começar</span>
+          </span>
+        </span>
+        <span class="open-label">Toque no livro para abrir</span>
       </button>
     </section>
 
     <section class="invite" id="invite" aria-hidden="true">
       <audio id="backgroundMusic" src="assets/musica.mp3" loop preload="auto"></audio>
-      <button class="music-toggle" id="musicToggle" type="button" aria-label="Pausar música" title="Pausar música">
-        <span aria-hidden="true">♫</span>
-      </button>
+      <button class="music-toggle" id="musicToggle" type="button" aria-label="Pausar música" title="Pausar música"><span aria-hidden="true">♫</span></button>
+
       <div class="book-stage">
         <div class="book" id="book">
-          <article class="page active" data-page="0">
+          <article class="page" data-page="0">
             <img src="assets/foto-1.jpeg" alt="Casal em meio à natureza" />
-            <div class="photo-overlay"></div>
+            <div class="text-shadow"></div>
             <div class="page-content hero-content">
               <span class="eyebrow">Com alegria no coração</span>
               <h1>Nós vamos casar</h1>
               <p>e queremos viver esse momento ao lado de pessoas especiais como você.</p>
-              <div class="swipe-tip">Deslize para continuar <span>›</span></div>
+              <div class="swipe-tip">Toque na lateral direita <span>›</span></div>
             </div>
           </article>
 
           <article class="page" data-page="1">
             <img src="assets/foto-2.jpeg" alt="Casal se beijando diante de uma paisagem" />
-            <div class="photo-overlay stronger"></div>
-            <div class="page-content center-content">
+            <div class="text-shadow"></div>
+            <div class="page-content date-content">
               <span class="ornament">❦</span>
               <p class="small-title">Reserve esta data</p>
               <h2>12 de dezembro<br><em>de 2027</em></h2>
@@ -68,19 +68,19 @@
 
           <article class="page" data-page="2">
             <img src="assets/foto-3.jpeg" alt="Casal em um ensaio ao ar livre" />
-            <div class="photo-overlay stronger"></div>
-            <div class="page-content center-content location-content">
+            <div class="text-shadow"></div>
+            <div class="page-content location-content">
               <span class="ornament">✦</span>
-              <p class="small-title">A cerimônia será em</p>
-              <h2>Aldeia<br>Betesda</h2>
+              <p class="small-title">Local da cerimônia</p>
+              <h2>Aldeia Betesda</h2>
               <p class="city">Toledo — PR</p>
-              <a class="ghost-button" href="https://maps.app.goo.gl/7Yv4KMbQgM6YdCXAA?g_st=iwb" target="_blank" rel="noopener noreferrer">Ver localização</a>
+              <a class="ghost-button" href="https://maps.app.goo.gl/7Yv4KMbQgM6YdCXAA?g_st=iwb" target="_blank" rel="noopener noreferrer">Abrir localização</a>
             </div>
           </article>
 
           <article class="page" data-page="3">
             <img src="assets/foto-4.jpeg" alt="Casal caminhando de mãos dadas" />
-            <div class="photo-overlay final-overlay"></div>
+            <div class="text-shadow final-shadow"></div>
             <div class="page-content final-content">
               <span class="eyebrow">Sua presença tornará tudo mais especial</span>
               <h2>Esperamos por você</h2>
@@ -95,23 +95,17 @@
                   <span class="icon">♡</span><span><strong>Lista de presentes</strong><small>Acessar lista Havan</small></span>
                 </a>
               </div>
-              <p class="signature">Com carinho,<br><em>os noivos</em></p>
             </div>
           </article>
-          <button class="page-zone page-zone-left" id="prevPage" type="button" aria-label="Voltar página">
-            <span>‹</span>
-          </button>
-          <button class="page-zone page-zone-right" id="nextPage" type="button" aria-label="Virar página">
-            <span>›</span>
-          </button>
+
+          <button class="page-zone page-zone-left" id="prevPage" type="button" aria-label="Voltar página"><span>‹</span></button>
+          <button class="page-zone page-zone-right" id="nextPage" type="button" aria-label="Virar página"><span>›</span></button>
           <div class="book-spine" aria-hidden="true"></div>
         </div>
       </div>
-
-      <p class="gesture-help">Toque na lateral da folha ou arraste o dedo</p>
+      <p class="gesture-help">Clique nas laterais da folha ou deslize o dedo</p>
     </section>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
