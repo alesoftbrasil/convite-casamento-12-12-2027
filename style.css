@@ -9,3 +9,75 @@
 @media(max-height:720px){.book-stage{width:min(75vw,342px)}.gesture-help{display:none}.page-content{padding-bottom:25px}.final-content{padding:18px}.action{padding:8px 10px}.final-content h2{font-size:35px}}
 @media(min-width:800px){.book-stage{width:420px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Tela cheia em celulares */
+@media (max-width: 799px){
+  html,body,.experience{width:100%;height:100%;min-height:100%;overflow:hidden}
+
+  .intro{inset:0;padding:0}
+  .story-book{width:100vw;height:100svh;max-width:none}
+  .book-shadow{left:4%;right:4%;bottom:1.5%;height:28px}
+  .book-block{
+    left:0;
+    top:0;
+    width:100vw;
+    height:100svh;
+    transform:none;
+  }
+  .book-pages{inset:0;border-radius:0}
+  .book-cover{
+    inset:0;
+    border-radius:0;
+    border-width:2px;
+    padding:max(40px,env(safe-area-inset-top)) 24px max(55px,env(safe-area-inset-bottom));
+  }
+  .cover-frame{inset:14px;border-radius:150px 150px 12px 12px}
+  .inside-page{inset:0;border-radius:0}
+  .open-label{bottom:max(16px,env(safe-area-inset-bottom))}
+  .story-book.opening .book-block{transform:none}
+
+  .invite{
+    position:fixed;
+    inset:0;
+    width:100vw;
+    height:100svh;
+    min-height:100svh;
+    padding:0;
+    display:block;
+    overflow:hidden;
+  }
+  .book-stage{
+    width:100vw;
+    height:100svh;
+    max-width:none;
+    perspective:2400px;
+  }
+  .book{
+    width:100vw;
+    height:100svh;
+    aspect-ratio:auto;
+    border-radius:0;
+    box-shadow:none;
+  }
+  .book::before{display:none}
+  .page{
+    inset:0;
+    width:100%;
+    height:100%;
+    border-radius:0;
+    border:0;
+  }
+  .page img{width:100%;height:100%;object-fit:cover;object-position:center}
+  .book-spine{left:0;top:0;bottom:0;border-radius:0;width:8px}
+  .page-zone{width:24%}
+  .page-zone-left span{left:10px}
+  .page-zone-right span{right:10px}
+  .music-toggle{top:max(12px,env(safe-area-inset-top));right:12px}
+  .gesture-help{display:none}
+  .page-content{
+    padding-left:22px;
+    padding-right:22px;
+    padding-bottom:max(30px,calc(env(safe-area-inset-bottom) + 18px));
+  }
+  .final-content{padding-bottom:max(22px,calc(env(safe-area-inset-bottom) + 12px))}
+}
